@@ -317,10 +317,10 @@ a{
 }
 #inslide-id:hover{
     border: none;
-    background-color: green;
-    color: white;
-    box-shadow: 0 0 5px green,
-                0 0 20px green;
+    background-color: rgb(79, 255, 79);
+    color: black;
+    box-shadow: 0 0 5px rgb(58, 255, 58),
+                0 0 20px rgb(69, 255, 69);
 }
 #inslide-btn:hover{
     border: none;
