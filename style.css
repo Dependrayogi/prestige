@@ -2,7 +2,7 @@
 body{
     font-family: Poppins;
     margin: 0;
-    background-color: #010101;
+    background-color: #2b2929;
     color: #eee;
 }
 svg{
@@ -409,4 +409,96 @@ a{
     0 0 20px red;
 }
 
+.welcome{
+    text-align: center;
+}
+.m-content{
+    text-align: center;
+}
 
+.flip-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.flip-card{
+    position: relative;
+    width: 300px;
+    height: 350px;
+    margin: 20px;
+}
+
+.flip-card .face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: .5s;
+
+}
+
+.flip-card .front{
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px #000;
+}
+
+.flip-card .front img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.flip-card .front h3{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    background: rgba(0, 0, 0, .4);
+    text-align: center;
+}
+
+.flip-card .back{
+    transform: perspective(600px) rotateY(180deg);
+    background: rgb(3, 35, 54);
+    padding: 15px;
+    color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 5px 10px #000;
+}
+
+.flip-card .back .flip-link{
+    border-top: solid 1px #f3f3f3;
+    height: 50px;
+    line-height: 50px;
+}
+.flip-card .back .flip-link a{
+    color: #f3f3f3;
+
+}
+.flip-card .back h3{
+    font-size: 30px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+}
+
+.flip-card .back p{
+    letter-spacing: 1px;
+
+}
+
+.flip-card:hover .front {
+    transform: perspective(600px) rotateY(180deg);
+}
+.flip-card:hover .back {
+    transform: perspective(600px) rotateY(360deg);
+}
