@@ -69,3 +69,16 @@ if(pageName === "contact.html"){
     document.querySelector(".contact").classList.add("activeLink");
 }
 
+const observer1 = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        console.log(entry)
+        if (entry.isIntersecting){
+            entry.target.classList.add('show-1');
+        } else{
+            entry.target.classList.remove('show-1');
+        }
+    });
+});
+
+const hiddenElements1 = document.querySelectorAll('.hidden-1')
+hiddenElements1.forEach((el) => observer1.observe(el));
