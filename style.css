@@ -61,7 +61,7 @@ header .logo{
     text-transform: uppercase;
     letter-spacing: 2px;
     transition: 0.6s;
-    right: 17%;
+    left: -170px;
 }
 
 /* header .links{
@@ -426,13 +426,14 @@ a{
 }
 
 .dropdown-menu li{
-    padding: 0.6rem;
+    padding: 0.3rem;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #000;
     z-index: 1000;
 }
+
 
 
 
@@ -559,7 +560,17 @@ a{
     line-height: 50px;
 }
 .flip-card .back .flip-link a{
-    color: #f3f3f3;
+    border-radius: 15px;
+    color: #0d0b0b;
+    padding: 8px;
+    background-color: #eeeeeedb;
+
+}
+.flip-card .back .flip-link a:hover{
+    border-radius: 15px;
+    color: #ffffff;
+    padding: 8px;
+    background-color: #ff00009d;
 
 }
 .flip-card .back h3{
@@ -662,3 +673,178 @@ a{
 }
 
 
+.new-container-1{
+    position: relative;
+    background: rgba(0, 0, 0, 0.515);
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.new-container-1 div{
+    margin: 10px;
+    width: 700px;
+    border-left: 200px solid rgba(255, 0, 0, 0.533);
+}
+
+.cards-1{
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-style: solid;
+    padding: 20px;
+}
+
+.pick{
+    position: absolute;
+    right: 110%;
+    top: 20%;
+}
+.cards-1 .ph-no{
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 4px;
+    font-size: xx-large;
+    color: rgb(255, 25, 25);
+}
+.cards-1 .in-con a{
+    color: red;
+}
+
+
+
+
+.home-sci a {
+    margin-top: 100px;
+    left: 650px;
+    bottom: 200px;
+	position: relative;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	width: 40px;
+	height: 40px;
+	background: transparent;
+	border: 2px solid #f00000;
+	border-radius: 50%;
+	font-size: 20px;
+	color: #f00000;
+	text-decoration: none;
+	z-index: 1;
+	overflow: hidden;
+	transition: .5s;
+}
+
+.home-sci a:hover {
+	color: #081b29;
+}
+
+.home-sci a::before{
+	content: '';
+	position: absolute;
+	justify-content: space-between;
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 100%;
+	background: #f00000;
+	z-index: -1;
+	transition: .5s;
+}
+
+.home-sci a:hover::before {
+	width: 100%;
+}
+
+.welcome{
+    display: relative;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    justify-content: space-evenly;    
+}
+.welcome a{
+    display: relative;
+    right: 20%;
+    color: green;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.768);
+    border-radius: 20px;
+}
+.welcome a:hover{
+    color: black;
+    padding: 10px;
+    background-color: rgb(20, 235, 20);
+    border-radius: 20px;
+}
+
+.welcome button{
+    font-size: large;
+    left: 20px;
+    border: none;
+    color: red;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.811);
+    border-radius: 20px;
+}
+
+.welcome a:hover{
+    border: none;
+    color: black;
+    padding: 10px;
+    background-color: rgb(20, 235, 20);
+    border-radius: 20px;
+}
+
+
+.new-container-2{
+    position: relative;
+    background: rgba(0, 0, 0, 0.852);
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding-bottom: -100px;
+}
+
+.new-container-2 .banner-1{
+    position: relative;
+    width: 200px;
+    height: 100px;
+    right: 600px;
+}
+.call{
+    position: relative;
+    right: 50%;
+    bottom: 15px;
+}
+.land-l{
+    position: relative;
+    top: 20px;
+    right: 50%;
+}
+.map{
+    position: relative;
+    left:50%;
+    bottom: 90px;
+}
+.clock{
+    position: relative;
+    left: 50%;
+    bottom: 60px;
+}
+
+.mail{
+    position: relative;
+    left: 175%;
+    bottom: 130px;
+}
+.mail div{
+    position: relative;
+    left: 20%;
+    top: -130px;
+}
+
+.last-cont{
+    background-color: #000000d9;
+}
+.last-cont-sub{
+    padding: 10px;
+    text-align: center;
+}
