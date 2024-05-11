@@ -82,3 +82,13 @@ const observer1 = new IntersectionObserver((entries) => {
 
 const hiddenElements1 = document.querySelectorAll('.hidden-1')
 hiddenElements1.forEach((el) => observer1.observe(el));
+
+
+var popupoverlay = document.querySelector(".popup-overlay");
+var popupbox = document.querySelector(".popup-box");
+var addpopupbtn = document.querySelector(".wel-btn");
+
+addpopupbtn.addEventListener("click", function(){
+    popupoverlay.style.display="block";
+    popupbox.style.display="block";
+});

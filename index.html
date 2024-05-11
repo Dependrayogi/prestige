@@ -13,6 +13,18 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="popup-overlay"></div>
+    <div class="popup-box">
+        <h2>
+            <form>
+                <button id="cancel-qoute">x</button>
+                <input type="text" placeholder="name" id="name-id">
+                <input type="text" placeholder="last name" id="name-id">
+                <textarea placeholder="write comments or details" id="quote-comment"></textarea>
+                <button>send</button>
+            </form>
+        </h2>
+    </div>
         <!-- header -->
     <header class="nav-bar">
         <div class="logo"><img src="image/icons/PF-Logo_page-0001-removebg.png" height="150px" width="200px"></div>
@@ -168,7 +180,6 @@
     </div>
     </section>
     </div>
-
     <br><br><br>
     <div class="main-cont">
     <section class="hidden-1">
@@ -332,7 +343,6 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, cum?</p>
     </div>
     </div>
-
 </div>
     <script>
         const togglebtn = document.querySelector('.toggle-btn')

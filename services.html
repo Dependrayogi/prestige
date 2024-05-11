@@ -13,15 +13,18 @@
 </style>
 </head>
 <body>
-        <!-- header -->
-    <header>
+       <!-- header -->
+       <header class="nav-bar">
         <div class="logo"><img src="image/icons/PF-Logo_page-0001-removebg.png" height="150px" width="200px"></div>
         <ul class="links">
             <li class="home"><a href="index.html">Home</a></li>
             <li class="services"><a href="services.html">Services</a></li>
             <li class="careers"><a href="careers.html">Careers</a></li>
             <li class="contact"><a href="contact.html">Contact Us</a></li>
-            <li class="facebook"><a href="facebook.com">Facebook</a></li>
+            <li class="facebook"><a href="" target="_blank">About Us</a></li>
+            <div class="home-sci">
+                <a href="https://github.com/vinith0r" target="_blank"><i class='bx bxl-facebook'></i></a>
+            </div>
         </ul>
         <div class="toggle-btn">
             <i class="fa-solid fa-bars"></i>
@@ -31,11 +34,16 @@
             <li class="services"><a href="services.html">Services</a></li>
             <li class="careers"><a href="careers.html">Careers</a></li>
             <li class="contact"><a href="contact.html">Contact Us</a></li>
-            <li class="facebook"><a href="facebook.com">Facebook</a></li>
+            <li class="facebook"><a href="#" target="_blank">About Us</a></li>
+            <li>
+            <div class="home-sci">
+                <a href="https://github.com/vinith0r" target="_blank"><i class='bx bxl-facebook'></i></a>
+            </div>
+            </li>
         </div>
     </header>
 
-    <!-- slider -->
+
 
         <div class="arrows">
             <button id="prev"><</button>
@@ -44,38 +52,158 @@
         <div class="arrows1">
             <button id="next">></button>
         </div>
-
-        <div class="top">
+    <div class="main-container">
+      <div class="top-container">
+      <div class="top-service">
             <h1>Logistic Services</h1>
-            <p>Latest technologies and working methods</p>
+            <p>Latest technologies and working methods lorem1000000</p>
       </div>
-        <div class="new-container">
-            <div class="cards">
-                <img src="image/img1.png" alt="">
-                <h1>Service</h1>
-                <p>Lorem ipsum dvero a ab imus.</p>
-                <a href="#">click here</a>
+    </div>
+    </div>
+    <div class="service-main-container">
+        <div class="service-container">
+    <div class="service-card-container">
+        <div class="service-card hidden-1">
+            <div class="imgBx">
+                <img src="image/img2.jpg" alt="">
+                <h2 class="img-h2">Card one</h2>
             </div>
-            <div class="cards">
-                <img src="image/img1.png" alt="">
-                <h1>Service</h1>
-                <p>Lri repellendus possimus.</p>
-                <a href="#">click here</a>
-            </div>
-            <div class="cards">
-                <img src="image/img1.png" alt="">
-                <h1>Service</h1>
-                <p>Lorem ipsum dolor sels vero .</p>
-                <a href="#">click here</a>
-            </div>
-            <div class="cards">
-                <img src="image/img1.png" alt="">
-                <h1>Service</h1>
-                <p>Lorem ipsum dolor si vero a ab .</p>
-                <a href="#">click here</a>
+            <div class="service-content">
+                <h2>Card one</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates cum totam aliquid consequatur cumque veniam, similique, exercitationem laborum quasi in, ea quas! Iusto, ratione laudantium.</p>
             </div>
         </div>
+    </div>
+    <br><br>
+    <div class="service-card-container">
+        <div class="service-card hidden-1">
+            <div class="imgBx">
+                <img src="image/img2.jpg" alt="">
+                <h2 class="img-h2">Card one</h2>
+            </div>
+            <div class="service-content">
+                <h2>Card one</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates cum totam aliquid consequatur cumque veniam, similique, exercitationem laborum quasi in, ea quas! Iusto, ratione laudantium.</p>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="main-requset-form">
+       <form action="">
+        <h2 class="reg">Registeration</h2>
+        <div class="form-content">
+            <div class="form-input-box">
+                <label for="name">Company Name</label>
+                <input type="text" placeholder="Enter full Name" name="name" required>
+            </div>
+            <div class="form-input-box">
+                <label for="username">Company Contact</label>
+                <input type="text" placeholder="Enter user Name" name="uname" required>
+            </div>
+            <div class="form-input-box">
+                <label for="email">Email</label>
+                <input type="email" placeholder="Enter your valid email address" name="email" required>
+            </div>
+            <div class="form-input-box">
+                <label for="phone">Phone Number</label>
+                <input type="tel" placeholder="Enter your phone number" name="phone" required>
+            </div>
+            <div class="form-input-box">
+                <label for="password">Fax</label>
+                <input type="text" placeholder="Enter new password" name="password" required>
+            </div>
+            <div class="form-input-box">
+                <label for="confirm-password">Prefered Contact Method</label>
+                <input type="password" placeholder="confirm-password" name="ConfirmPassword" required>
+            </div>
+            <div class="origin-category">
+                <div class="origin-branch">
+                    <label for="address">Orgin-address</label>
+                    <input type="text" name="address" id="adrs">
+                </div>
+                <div class="origin-branch">
+                    <label for="pickup">Type of pickup</label>
+                <input type="text" name="pickup" id="female">
+                </div>
+                <div class="origin-branch">
+                    <label for="Time">Loading Time</label>
+                    <input type="time" name="gender" id="other">
+                </div>
+            </div>
+            <div class="origin-category">
+                <div class="origin-branch">
+                    <label for="address">Destination address</label>
+                    <input type="text" name="address" id="adrs">
+                </div>
+                <div class="origin-branch">
+                    <label for="pickup">Comodity type</label>
+                <input type="text" name="pickup" id="female">
+                </div>
+                <div class="origin-branch">
+                    <label for="value">Delcalred value</label>
+                    <input type="value" name="gender" id="other">
+                </div>
+            </div>
+            <div class="origin-category">
+                <div class="origin-branch">
+                    <label for="weight">weight</label>
+                    <input type="text" name="address" id="adrs">
+                </div>
+                <div class="origin-branch">
+                    <label for="pickup">length</label>
+                <input type="text" name="pickup" id="female">
+                </div>
+                <div class="origin-branch">
+                    <label for="width">width</label>
+                    <input type="text" name="gender" id="other">
+                </div>
+                <div class="origin-branch">
+                    <label for="weight">weight</label>
+                    <input type="text" name="gender" id="other">
+                </div>
+            </div>
+            <div class="form-input-box">
+                <label for="password">Equipment Type</label>
+                <select class="eqtype">
+                     <option value="volvo">53'Tandem</option>
+                     <option value="saab">53'Plate</option>
+                     <option value="opel">53'Tridem</option>
+                    <option value="audi">53 Tandem Heat</option>
+                    <option value="opel">53'Tridem Heat</option>
+                    <option value="audi">Flatbread</option>
 
+                </select>
+            </div>
+            <div class="form-input-box">
+                <label for="password">Load Type</label>
+                <select class="ldtype">
+                     <option value="volvo">Flat-Deck Pickup</option>
+                     <option value="saab">Tarping</option>
+                     <option value="opel">Protective Service / Heat</option>
+                    <option value="audi">Flat-Deck Delivery</option>
+                </select>
+            </div>
+            <span class="gender-title">Time-Critical or Regular Service?</span>
+            <div class="gender-category">
+                <input type="radio" name="gender" id="male">
+                <label for="male">Time-Critical</label>
+                <input type="radio" name="gender" id="female">
+                <label for="male">Regular Service</label>
+            </div>
+        </div>
+        <div class="form-input-box">
+            <label for="password">Comments or Special Instructions:</label>
+            <textarea placeholder="Comments or Special Instructions" name="" id=""></textarea>
+        </div>
+        <div class="alert-1">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis aut molestiae laudantium vel alias a fuga corporis dolorem atque et.</p>
+        </div>
+        <div class="send-btn">
+            <button type="submit">Register</button>
+        </div>
+       </form>
+    </div>
+</div>
     <script>
         const togglebtn = document.querySelector('.toggle-btn')
         const togglebtnIcon = document.querySelector('.toggle-btn i')
@@ -91,5 +219,11 @@
         }
     </script>
     <script src="app.js"></script>
+    <script>
+        window.addEventListener("scroll", function(){
+        var header = document.querySelector("header");
+        header.classList.toggle("sticky", window.scrollY > 0); 
+        })
+    </script>
 </body>
 </html>
