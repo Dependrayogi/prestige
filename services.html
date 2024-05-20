@@ -21,7 +21,6 @@
             <li class="services"><a href="services.html">Services</a></li>
             <li class="careers"><a href="careers.html">Careers</a></li>
             <li class="contact"><a href="contact.html">Contact Us</a></li>
-            <li class="facebook"><a href="" target="_blank">About Us</a></li>
             <div class="home-sci">
                 <a href="https://github.com/vinith0r" target="_blank"><i class='bx bxl-facebook'></i></a>
             </div>
@@ -34,12 +33,6 @@
             <li class="services"><a href="services.html">Services</a></li>
             <li class="careers"><a href="careers.html">Careers</a></li>
             <li class="contact"><a href="contact.html">Contact Us</a></li>
-            <li class="facebook"><a href="#" target="_blank">About Us</a></li>
-            <li>
-            <div class="home-sci">
-                <a href="https://github.com/vinith0r" target="_blank"><i class='bx bxl-facebook'></i></a>
-            </div>
-            </li>
         </div>
     </header>
 
@@ -89,111 +82,112 @@
     </div>
     </div>
     <div class="main-requset-form">
-       <form action="">
+       <form action="https://api.web3forms.com/submit" method="POST">
         <h2 class="reg">Registeration</h2>
+        <input type="hidden" name="access_key" value="bfae94b3-f5ff-4604-b197-99e6d0291dc8">
         <div class="form-content">
             <div class="form-input-box">
-                <label for="name">Company Name</label>
-                <input type="text" placeholder="Enter full Name" name="name" required>
+                <label for="c-name">Company Name</label>
+                <input type="text" placeholder="Enter Company Name" name="Company_Name" required>
             </div>
             <div class="form-input-box">
-                <label for="username">Company Contact</label>
-                <input type="text" placeholder="Enter user Name" name="uname" required>
+                <label for="c-contact">Company Contact</label>
+                <input type="text" placeholder="Enter Company contact" name="Company_Contact" required>
             </div>
             <div class="form-input-box">
                 <label for="email">Email</label>
-                <input type="email" placeholder="Enter your valid email address" name="email" required>
+                <input type="email" placeholder="Enter your valid email address" name="Email" required>
             </div>
             <div class="form-input-box">
                 <label for="phone">Phone Number</label>
-                <input type="tel" placeholder="Enter your phone number" name="phone" required>
+                <input type="tel" placeholder="Enter your phone number" name="Phone" required>
             </div>
             <div class="form-input-box">
-                <label for="password">Fax</label>
-                <input type="text" placeholder="Enter new password" name="password" required>
+                <label for="fax">Fax</label>
+                <input type="text" placeholder="Enter Fax" name="Fax" required>
             </div>
             <div class="form-input-box">
-                <label for="confirm-password">Prefered Contact Method</label>
-                <input type="password" placeholder="confirm-password" name="ConfirmPassword" required>
+                <label for="confirm-password">Preferred Contact Method</label>
+                <input type="text" placeholder="Enter Contact Method" name="Contact_Method" required>
             </div>
             <div class="origin-category">
                 <div class="origin-branch">
-                    <label for="address">Orgin-address</label>
-                    <input type="text" name="address" id="adrs">
+                    <label for="address">Origin Address</label>
+                    <input type="text" name="Address" id="adrs">
                 </div>
                 <div class="origin-branch">
                     <label for="pickup">Type of pickup</label>
-                <input type="text" name="pickup" id="female">
+                <input type="text" name="Pickup" id="female">
                 </div>
                 <div class="origin-branch">
                     <label for="Time">Loading Time</label>
-                    <input type="time" name="gender" id="other">
+                    <input type="time" name="Load-time" id="other">
                 </div>
             </div>
             <div class="origin-category">
                 <div class="origin-branch">
-                    <label for="address">Destination address</label>
-                    <input type="text" name="address" id="adrs">
+                    <label for="address">Destination Address</label>
+                    <input type="text" name="Destination_Address" id="adrs">
                 </div>
                 <div class="origin-branch">
-                    <label for="pickup">Comodity type</label>
-                <input type="text" name="pickup" id="female">
+                    <label for="c-type">Commodity Type</label>
+                <input type="text" name="Commodity_Type" id="c-type">
                 </div>
                 <div class="origin-branch">
-                    <label for="value">Delcalred value</label>
-                    <input type="value" name="gender" id="other">
+                    <label for="value">Declared Value</label>
+                    <input type="value" name="Declared_Value" id="d-value">
                 </div>
             </div>
             <div class="origin-category">
                 <div class="origin-branch">
                     <label for="weight">weight</label>
-                    <input type="text" name="address" id="adrs">
+                    <input type="text" name="weight" id="adrs">
                 </div>
                 <div class="origin-branch">
-                    <label for="pickup">length</label>
-                <input type="text" name="pickup" id="female">
+                    <label for="length">length</label>
+                <input type="text" name="length" id="length">
                 </div>
                 <div class="origin-branch">
                     <label for="width">width</label>
-                    <input type="text" name="gender" id="other">
+                    <input type="text" name="width" id="other">
                 </div>
                 <div class="origin-branch">
-                    <label for="weight">weight</label>
-                    <input type="text" name="gender" id="other">
+                    <label for="weight-2">weight</label>
+                    <input type="text" name="weight-2" id="other">
                 </div>
             </div>
             <div class="form-input-box">
-                <label for="password">Equipment Type</label>
-                <select class="eqtype">
-                     <option value="volvo">53'Tandem</option>
-                     <option value="saab">53'Plate</option>
-                     <option value="opel">53'Tridem</option>
-                    <option value="audi">53 Tandem Heat</option>
-                    <option value="opel">53'Tridem Heat</option>
-                    <option value="audi">Flatbread</option>
+                <label for="type">Equipment Type</label>
+                <select name="Equipment_Type" class="eqtype">
+                     <option value="53-tandem">53'Tandem</option>
+                     <option value="53-Plate">53'Plate</option>
+                     <option value="53-Tridem">53'Tridem</option>
+                    <option value="53-Tandem-Heat">53 Tandem Heat</option>
+                    <option value="53-Tridem-Heat">53'Tridem Heat</option>
+                    <option value="Flatbread">Flatbread</option>
 
                 </select>
             </div>
             <div class="form-input-box">
-                <label for="password">Load Type</label>
-                <select class="ldtype">
-                     <option value="volvo">Flat-Deck Pickup</option>
-                     <option value="saab">Tarping</option>
-                     <option value="opel">Protective Service / Heat</option>
-                    <option value="audi">Flat-Deck Delivery</option>
+                <label for="ld">Load Type</label>
+                <select name="Load_Type" class="ldtype">
+                     <option value="Flat-Deck Pickup">Flat-Deck Pickup</option>
+                     <option value="Tarping">Tarping</option>
+                     <option value="Protective-Service-Heat">Protective Service / Heat</option>
+                    <option value="Flat-Deck-Delivery">Flat-Deck Delivery</option>
                 </select>
             </div>
             <span class="gender-title">Time-Critical or Regular Service?</span>
             <div class="gender-category">
-                <input type="radio" name="gender" id="male">
+                <input type="radio" name="Time_Crtical" id="Time-Critical">
                 <label for="male">Time-Critical</label>
-                <input type="radio" name="gender" id="female">
+                <input type="radio" name="Regular_Service" id="regular-c">
                 <label for="male">Regular Service</label>
             </div>
         </div>
         <div class="form-input-box">
-            <label for="password">Comments or Special Instructions:</label>
-            <textarea placeholder="Comments or Special Instructions" name="" id=""></textarea>
+            <label for="Comments">Comments or Special Instructions:</label>
+            <textarea placeholder="Comments or Special Instructions" name="Instructions_and_Comments" id="c-i"></textarea>
         </div>
         <div class="alert-1">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis aut molestiae laudantium vel alias a fuga corporis dolorem atque et.</p>

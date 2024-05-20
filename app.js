@@ -87,8 +87,30 @@ hiddenElements1.forEach((el) => observer1.observe(el));
 var popupoverlay = document.querySelector(".popup-overlay");
 var popupbox = document.querySelector(".popup-box");
 var addpopupbtn = document.querySelector(".wel-btn");
+var popupform = document.querySelector(".main-requset-form")
 
 addpopupbtn.addEventListener("click", function(){
     popupoverlay.style.display="block";
     popupbox.style.display="block";
+    popupform.style.display="block"
+
+});
+
+var cancelbutton = document.querySelector(".cancel-class")
+
+cancelbutton.addEventListener("click", function(event){
+    event.preventDefault()
+    popupoverlay.style.display="none";
+    popupbox.style.display="none";
+    popupform.style.display="none";
+
+})
+
+var requsetpopup = document.getElementById("inslide-btn")
+
+requsetpopup.addEventListener("click", function(){
+    popupoverlay.style.display="block";
+    popupbox.style.display="block";
+    popupform.style.display="block"
+
 });

@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prestige</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="careers.css">
 <style>
     .arrows, .arrows1{
         display: none;
@@ -14,15 +13,17 @@
 </style>
 </head>
 <body>
-        <!-- header -->
-    <header>
+       <!-- header -->
+       <header class="nav-bar">
         <div class="logo"><img src="image/icons/PF-Logo_page-0001-removebg.png" height="150px" width="200px"></div>
         <ul class="links">
             <li class="home"><a href="index.html">Home</a></li>
             <li class="services"><a href="services.html">Services</a></li>
             <li class="careers"><a href="careers.html">Careers</a></li>
             <li class="contact"><a href="contact.html">Contact Us</a></li>
-            <li class="facebook"><a href="facebook.com">Facebook</a></li>
+            <div class="home-sci">
+                <a href="https://github.com/vinith0r" target="_blank"><i class='bx bxl-facebook'></i></a>
+            </div>
         </ul>
         <div class="toggle-btn">
             <i class="fa-solid fa-bars"></i>
@@ -32,11 +33,10 @@
             <li class="services"><a href="services.html">Services</a></li>
             <li class="careers"><a href="careers.html">Careers</a></li>
             <li class="contact"><a href="contact.html">Contact Us</a></li>
-            <li class="facebook"><a href="facebook.com">Facebook</a></li>
         </div>
     </header>
 
-    <!-- slider -->
+
 
         <div class="arrows">
             <button id="prev"><</button>
@@ -45,8 +45,98 @@
         <div class="arrows1">
             <button id="next">></button>
         </div>
+    <div class="main-container">
+      <div class="top-container">
+      <div class="top-service">
+            <h1>Logistic Careers</h1>
+            <p>Latest technologies and working methods lorem1000000</p>
+      </div>
+    </div>
+    </div>
+    <div class="about-container">
+        <div class="small-forum">
+            <form name="myform" action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="bfae94b3-f5ff-4604-b197-99e6d0291dc8">
+                <div class="form-name">
+                <label for="name">Name</label><br>
+                <input class="name" type="text" name="name" placeholder="first name">
+                <input class="name" type="text" name="last name" placeholder="last name">
+                </div>
+                <label class="email-label" for="email">Email</label><br>
+                <div class="form-email">
+                    <input class="email-class" type="email" name="Email" placeholder="Enter Email">
+                    <label class="phone-label" for="">Phone</label>
+                    <input class="phone-input" type="tel" name="Phone" placeholder="Enter Phone">
+                </div>
+                <div>
+                    <label class="date-label" for="dob">Date of Birth</label><br>
+                    <input class="date-input" type="date" name="date">
+                </div>
+                <label class="pos-des-class" for="position">Position Desired</label><br>
+                        <select name="Position_Desired" class="pos-des" id="pos-des">
+                        <option value="Company_Driver">Company Driver</option>
+                        <option value="Owner_Operator">Owner Operator</option>
+                        <option value="Administrative_Staff">Administrative Staff</option>
+                        <option value="Shoop_Technician">Shoop technician</option>
+                </select>
+                <label for="">Cross border or local work?</label><br>
+                <div class="radio-btn-c-l" onsubmit="return validate()">
+                   <input class="cb-input" type="radio" id="" name="Cross border or local work?" value="cross-border">
+                   <label class="c-b-class" for="c-b">Cross Border</label><br>
+                   <input class="l-w-input" type="radio" id="" name="Cross border or local work?" value="local-work">
+                   <label class="l-w-class" for="l-w">Local Work</label><br>
+                </div>
+                <label for="">Have you ever worked for us before?</label><br>
+                <div class="radio-btn">
+                    <input class="cb-input" type="radio" id="" name="Have you ever worked for us before?">
+                    <label class="c-b-class" for="">Yes</label><br>
+                    <input class="l-w-input" type="radio" id="" name="Have you ever worked for us before?">
+                    <label class="l-w-class" for="css">No</label><br>
+                 </div>
+                 <label for="">Criminal Record? </label><br>
+                 <div class="radio-btn">
+                    <input class="cb-input" type="radio" id="" name="Criminal Record?">
+                    <label class="c-b-class" for="">Yes</label><br>
+                    <input class="l-w-input" type="radio" id="" name="Criminal Record?">
+                    <label class="l-w-class" for="css">No</label><br>
+                 </div>
+                 <label for="">Eligible to work in Canada?</label><br>
+                 <div class="radio-btn">
+                    <input class="cb-input" type="radio" id="" name="Eligible to work in Canada?">
+                    <label class="c-b-class" for="">Yes</label><br>
+                    <input class="l-w-input" type="radio" id="" name="Eligible to work in Canada?">
+                    <label class="l-w-class" for="css">No</label><br>
+                 </div>
+                <div class="message-text">
+                    <label for="Message">Work Experience (last three years)</label><br>
+                    <textarea class="message-class" name="Message" id=""></textarea>
+                </div>
+                <label for="">Has your license ever been revoked, suspended or denied?</label><br><br>
+                <div class="radio-btn">
+                    <input class="cb-input" type="radio" id="" name="Has your license ever been revoked, suspended or denied?">
+                    <label class="c-b-class" for="">Yes</label><br>
+                    <input class="l-w-input" type="radio" id="" name="Has your license ever been revoked, suspended or denied?">
+                    <label class="l-w-class" for="css">No</label><br>
+                </div>
 
-     
+                 <div class="message-text">
+                    <label for="Message">List any accidents from the last three years:</label><br>
+                    <textarea class="message-class" name="List any accidents from the last three years:" id=""></textarea>
+                </div>
+                <div class="message-text">
+                    <label for="Message">List any tickets from the last three years:</label><br>
+                    <textarea class="message-class" name="List any tickets from the last three years:" id=""></textarea>
+                </div>
+                <div class="file-upload">
+                    <label for="">upload files:</label><br>
+                    <input type="file">
+                </div>
+                <div class="submit">
+                    <button>send</button>
+                </div>
+            </form>
+        </div>
+</div>
     <script>
         const togglebtn = document.querySelector('.toggle-btn')
         const togglebtnIcon = document.querySelector('.toggle-btn i')
@@ -62,5 +152,23 @@
         }
     </script>
     <script src="app.js"></script>
+    <script>
+        window.addEventListener("scroll", function(){
+        var header = document.querySelector("header");
+        header.classList.toggle("sticky", window.scrollY > 0); 
+        })
+    </script>
+    <script>
+        function validate(){
+            var valid = false;
+            var x = document.myform.Cross-border-or-local-work;
+            for(var i=0; i<x.length; i++){
+                if(x[i].checked){
+                    valid = true;
+                    break;
+                }
+            }
+        }
+    </script>
 </body>
 </html>
